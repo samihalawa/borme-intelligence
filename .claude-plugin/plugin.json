@@ -1,8 +1,8 @@
 {
   "name": "borme-intelligence",
   "displayName": "BORME Intelligence",
-  "version": "0.1.2",
-  "description": "Find a company’s published registry acts in a specified BORME issue and turn them into a source-linked corporate-events brief.",
+  "version": "0.2.0",
+  "description": "Consulta actos de una sociedad en el BORME por provincia y fecha, con rangos de hasta siete días y fuentes verificables.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
@@ -10,8 +10,11 @@
   "license": "MIT",
   "keywords": [
     "spain",
-    "official-data",
-    "read-only"
+    "borme",
+    "empresas",
+    "actos-societarios",
+    "registro-mercantil",
+    "b2b"
   ],
   "homepage": "https://github.com/samihalawa/borme-intelligence/blob/main/README.md",
   "repository": "https://github.com/samihalawa/borme-intelligence",

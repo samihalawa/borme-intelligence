@@ -1,40 +1,31 @@
-# Claude directory submission — BORME Intelligence
+# Claude review — BORME Intelligence 0.2.0
 
-## Identity
-
-Publisher: **Sami Halawa**. Contact: **sami@samihalawa.com**. Plugin: `borme-intelligence`. Release: `0.1.2`. Original software licence: MIT. Third-party data, service access and trademarks retain separate terms.
-
-## Source for the reviewer
+Publisher: Sami Halawa · Contact: sami@samihalawa.com
 
 Repository: https://github.com/samihalawa/borme-intelligence
 
-Plugin folder: repository root (`.`)
+Plugin at repository root. Stable identity: `borme-intelligence`.
 
-Direct folder URL: https://github.com/samihalawa/borme-intelligence
+## Listing
 
-The plugin folder contains `.claude-plugin/plugin.json`, an actual icon, four HTTPS documentation/support/policy links, one focused skill, executable adapters and review examples. This is a standalone repository with no sibling-package dependency.
+Consulta actos de una sociedad en el BORME por provincia y fecha, con rangos de hasta siete días y fuentes verificables.
 
-## Listing description
+Audience: Consultoras y equipos B2B que comprueban actos societarios.
 
-Find a company’s published registry acts in a specified BORME issue and turn them into a source-linked corporate-events brief.
+First prompt: Busca actos de LINGUASERVE en Madrid entre el 19 y el 20 de octubre de 2026.
 
-## First run
+## Reviewer walkthrough
 
-```bash
-claude plugin marketplace add samihalawa/borme-intelligence
-claude plugin install borme-intelligence@borme-intelligence
-```
+Install with `/plugin install borme-intelligence --marketplace samihalawa/borme-intelligence`. Ask for an example: `demo` must be labelled as a saved snapshot, not live. The captured response is in `skills/borme-intelligence/references/demo.json`. Run the live README example in an authorized Python 3.11+ environment, inspect scope and source dates, then export HTML. The report must not execute source text or load external assets.
 
-Prompt: **Check a company in a specified BORME issue and show the exact registered acts.**
+Negative fixtures in `tests/test_core.py` are synthetic regressions, not live user tests. No credentials, product account, purchase or API key is required. This is a skills package, not a hosted MCP service.
 
-Expected scope, sample interaction and negative scenarios are documented in the skill and `skills/borme-intelligence/references/examples.md`. They are test specifications, not claims of completed user testing.
+## Included review materials
 
-## Access and data handling
+README, CHANGELOG, real icon, support/privacy/terms, static page source in docs/, saved official-source example, executable tests and versioned evidence. Dataset/service rights are separate from the MIT software licence.
 
-No reviewer credentials, account signup, payment or third-party API key is needed. Python 3.11+ and provider networking are required for direct adapter execution. The skill can also guide native browsing or supplied-document analysis on supported hosts. No unsupported host capability is promised. This is read-only software; it does not apply for funding, submit bids, look up protected owners or provide legal certification. Read the product's privacy, terms and source-reference files.
+## Scope
 
-## Validation and submission
+No es un historial completo, monitor continuo, certificado registral ni evaluación crediticia. Una coincidencia de nombre no prueba identidad. No crea perfiles de personas.
 
-Run `claude plugin validate --strict .` from this folder using Claude Code 2.1.281 or newer. The optional CI template at `ci/validate.yml` is not active. Actual local Claude strict-validation results are recorded in `evidence/claude-validation.json`; public-source installation is verified separately. Neither a template nor a package manifest constitutes a completed test.
-
-Submit this repository URL; the plugin is at its root through https://claude.ai/directory/manage under the verified publisher account. Official guidance: https://code.claude.com/docs/en/plugins/publish . Portal-specific checks, applicable publisher attestations and Anthropic review remain separate from source publication. Anthropic's directory and the separately curated `claude-plugins-official` marketplace are distinct routes. No submission, approval, official listing or adoption is claimed here.
+Read evidence for the actual completed checks. CI is an inactive template. Source publication, package validation, installation, user acceptance, directory review and adoption are separate states. No official listing or approval is claimed. Submit through https://claude.ai/directory/manage under the intended verified publisher identity; applicable publisher attestations remain with the owner.

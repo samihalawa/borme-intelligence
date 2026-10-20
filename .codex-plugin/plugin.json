@@ -3,29 +3,37 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Find a company’s published registry acts in a specified BORME issue and turn them into a source-linked corporate-events brief.",
+  "description": "Consulta actos de una sociedad en el BORME por provincia y fecha, con rangos de hasta siete días y fuentes verificables.",
   "interface": {
     "capabilities": [],
     "category": "Productivity",
     "composerIcon": "./assets/icon.png",
     "defaultPrompt": [
-      "Check a company in a specified BORME issue and show the exact registered acts.",
-      "Explain these corporate notices without assuming they prove current ownership."
+      "Busca actos de LINGUASERVE en Madrid entre el 19 y el 20 de octubre de 2026.",
+      "Resume estos anuncios y distingue fecha de publicación, acto e inscripción.",
+      "Muéstrame una ficha de ejemplo con el alcance exacto de la búsqueda."
     ],
     "developerName": "Sami Halawa",
     "displayName": "BORME Intelligence",
     "logo": "./assets/icon.png",
-    "longDescription": "Find a company’s published registry acts in a specified BORME issue and turn them into a source-linked corporate-events brief.\n\nIncludes a focused assistant workflow, official-source references, review examples and a Python 3.11+ read-only adapter. In ChatGPT, uses available native browsing/file tools; in Claude Code or Codex, the bundled scripts can retrieve official data directly when networking is permitted. No separate account, API key or publisher-hosted server is required for this skills release.\n\nNo full commercial-registry database, certified current status, beneficial-ownership lookup, credit scoring, person-search product, contact harvesting or automatic monitoring.\n\nIndependent software by Sami Halawa. Not affiliated with Spanish public authorities.",
-    "shortDescription": "Company notices, sourced"
+    "longDescription": "Consulta actos de una sociedad en el BORME por provincia y fecha, con rangos de hasta siete días y fuentes verificables.\n\nConsultoras y equipos B2B que comprueban actos societarios. Una empresa, una provincia y un periodo explícito. Hasta siete días por consulta, con incidencias por día. Actos publicados y enlaces, sin una puntuación de riesgo inventada.\n\nEjemplos guardados sin conexión e informes HTML/Markdown/JSON. Sin cuenta adicional, claves API ni servicio propio. Los scripts requieren Python 3.11+ y red autorizada. En ChatGPT, se utilizan únicamente las herramientas nativas disponibles.\n\nNo es un historial completo, monitor continuo, certificado registral ni evaluación crediticia. Una coincidencia de nombre no prueba identidad. No crea perfiles de personas.",
+    "shortDescription": "Actos societarios claros",
+    "websiteURL": "https://github.com/samihalawa/borme-intelligence/blob/main/README.md",
+    "supportURL": "https://github.com/samihalawa/borme-intelligence/blob/main/SUPPORT.md",
+    "privacyPolicyURL": "https://github.com/samihalawa/borme-intelligence/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/samihalawa/borme-intelligence/blob/main/TERMS.md"
   },
   "keywords": [
     "spain",
-    "official-data",
-    "read-only",
-    "borme-intelligence"
+    "claude-plugin",
+    "borme",
+    "empresas",
+    "actos-societarios",
+    "registro-mercantil",
+    "b2b"
   ],
   "license": "MIT",
   "name": "borme-intelligence",
   "skills": "./skills",
-  "version": "0.1.2"
+  "version": "0.2.0"
 }

@@ -3,5 +3,10 @@
     "name": "borme_company_notices",
     "signature": "(company: 'str', date: 'str', province: 'str' = 'MADRID', limit: 'int' = 20) -> 'dict[str, Any]'",
     "description": "Find corporate-name matches in one province's BORME registered-acts issue. Preserves official records; not a complete company history or credit assessment."
+  },
+  {
+    "name": "borme_company_range",
+    "signature": "(company: 'str', start_date: 'str', end_date: 'str', province: 'str' = 'MADRID', limit: 'int' = 20) -> 'dict[str, Any]'",
+    "description": "Inspect one company/province over up to seven explicit days, preserving missing issues and failures. User-initiated lookup, not monitoring."
   }
 ]
