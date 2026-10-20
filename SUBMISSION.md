@@ -6,6 +6,10 @@ Repository: https://github.com/samihalawa/borme-intelligence
 
 Plugin at repository root. Stable identity: `borme-intelligence`.
 
+Public product page: https://samihalawa.github.io/borme-intelligence/
+
+Saved official-source report: https://samihalawa.github.io/borme-intelligence/demo.html
+
 ## Listing
 
 Consulta actos de una sociedad en el BORME por provincia y fecha, con rangos de hasta siete días y fuentes verificables.

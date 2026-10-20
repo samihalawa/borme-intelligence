@@ -22,9 +22,11 @@ Consulta actos de una sociedad en el BORME por provincia y fecha, con rangos de 
 
 También: “Resume estos anuncios y distingue fecha de publicación, acto e inscripción.”
 
-[Ver el informe de ejemplo](examples/demo.md) · [Código de la página del producto](docs/index.html) · [Flujo completo](skills/borme-intelligence/references/workflow.md)
+[Ver el informe de ejemplo](https://samihalawa.github.io/borme-intelligence/demo.html) · [Web y demostración](https://samihalawa.github.io/borme-intelligence/) · [Flujo completo](skills/borme-intelligence/references/workflow.md)
 
 La demostración es una **captura guardada de fuentes oficiales**, no una consulta actual. Conserva fecha, enlaces y alcance.
+
+[![Vista de BORME Intelligence](docs/preview.jpg)](https://samihalawa.github.io/borme-intelligence/)
 
 ## Instalar en Claude Code
 

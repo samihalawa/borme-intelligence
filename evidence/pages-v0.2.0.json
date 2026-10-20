@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "checked_at": "2026-10-20T16:33:49.993187+00:00",
+  "source_commit": "7ce318fcd93f5d4c1fc871c5f0d2f6c80bf5cc38",
+  "public_url": "https://samihalawa.github.io/borme-intelligence/",
+  "source": {
+    "branch": "main",
+    "path": "/docs"
+  },
+  "scope": "Anonymous HTTP and exact published-asset matching; responsive behavior tested separately.",
+  "checks": [
+    {
+      "url": "https://samihalawa.github.io/borme-intelligence/",
+      "http_status": 200,
+      "sha256": "9b028ae8f94ca1b3374cfa7673f1536b5638676c48f214275e5f91b4efab20e0",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/borme-intelligence/demo.html",
+      "http_status": 200,
+      "sha256": "1fef7837592afe9194f8c3f3ce590fcc713ac7dc9ba8c87fd205b3f3b8ec579a",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/borme-intelligence/style.css",
+      "http_status": 200,
+      "sha256": "add71020320976e5631374baacaef51844820112f139eb17f59f846f25d7b8c6",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/borme-intelligence/site.js",
+      "http_status": 200,
+      "sha256": "59108e7d8efc8395bf2f34105b557e7468dfc1998902b92dd57bb20ed0ff8340",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/borme-intelligence/icon.png",
+      "http_status": 200,
+      "sha256": "c21ba47bdfef26c191e30695ea878c9c1d215f6576223245d1112de46ec09a19",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/borme-intelligence/preview.jpg",
+      "http_status": 200,
+      "sha256": "d466cc2423b28aeab6b7711ee26ae9cf205c6dbfbd37ca41302131dbe54ff644",
+      "matches_source": true
+    }
+  ]
+}

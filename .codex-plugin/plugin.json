@@ -18,7 +18,7 @@
     "logo": "./assets/icon.png",
     "longDescription": "Consulta actos de una sociedad en el BORME por provincia y fecha, con rangos de hasta siete días y fuentes verificables.\n\nConsultoras y equipos B2B que comprueban actos societarios. Una empresa, una provincia y un periodo explícito. Hasta siete días por consulta, con incidencias por día. Actos publicados y enlaces, sin una puntuación de riesgo inventada.\n\nEjemplos guardados sin conexión e informes HTML/Markdown/JSON. Sin cuenta adicional, claves API ni servicio propio. Los scripts requieren Python 3.11+ y red autorizada. En ChatGPT, se utilizan únicamente las herramientas nativas disponibles.\n\nNo es un historial completo, monitor continuo, certificado registral ni evaluación crediticia. Una coincidencia de nombre no prueba identidad. No crea perfiles de personas.",
     "shortDescription": "Actos societarios claros",
-    "websiteURL": "https://github.com/samihalawa/borme-intelligence/blob/main/README.md",
+    "websiteURL": "https://samihalawa.github.io/borme-intelligence/",
     "supportURL": "https://github.com/samihalawa/borme-intelligence/blob/main/SUPPORT.md",
     "privacyPolicyURL": "https://github.com/samihalawa/borme-intelligence/blob/main/PRIVACY.md",
     "termsOfServiceURL": "https://github.com/samihalawa/borme-intelligence/blob/main/TERMS.md"
@@ -35,5 +35,6 @@
   "license": "MIT",
   "name": "borme-intelligence",
   "skills": "./skills",
-  "version": "0.2.0"
+  "version": "0.2.0",
+  "homepage": "https://samihalawa.github.io/borme-intelligence/"
 }
