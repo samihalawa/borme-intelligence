@@ -1,0 +1,19 @@
+{
+  "name": "borme-intelligence",
+  "owner": {
+    "name": "Sami Halawa",
+    "email": "sami@samihalawa.com"
+  },
+  "metadata": {
+    "description": "Find a company’s published registry acts in a specified BORME issue and turn them into a source-linked corporate-events brief.",
+    "version": "0.1.2"
+  },
+  "plugins": [
+    {
+      "name": "borme-intelligence",
+      "source": "./",
+      "description": "Find a company’s published registry acts in a specified BORME issue and turn them into a source-linked corporate-events brief.",
+      "version": "0.1.2"
+    }
+  ]
+}

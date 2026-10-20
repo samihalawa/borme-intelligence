@@ -1,0 +1,7 @@
+[
+  {
+    "name": "borme_company_notices",
+    "signature": "(company: 'str', date: 'str', province: 'str' = 'MADRID', limit: 'int' = 20) -> 'dict[str, Any]'",
+    "description": "Find corporate-name matches in one province's BORME registered-acts issue. Preserves official records; not a complete company history or credit assessment."
+  }
+]

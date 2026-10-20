@@ -1,0 +1,23 @@
+{
+  "name": "borme-intelligence",
+  "displayName": "BORME Intelligence",
+  "version": "0.1.2",
+  "description": "Find a company’s published registry acts in a specified BORME issue and turn them into a source-linked corporate-events brief.",
+  "author": {
+    "name": "Sami Halawa",
+    "email": "sami@samihalawa.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "spain",
+    "official-data",
+    "read-only"
+  ],
+  "homepage": "https://github.com/samihalawa/borme-intelligence/blob/main/README.md",
+  "repository": "https://github.com/samihalawa/borme-intelligence",
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://github.com/samihalawa/borme-intelligence/blob/main/README.md",
+  "supportUrl": "https://github.com/samihalawa/borme-intelligence/blob/main/SUPPORT.md",
+  "privacyPolicyUrl": "https://github.com/samihalawa/borme-intelligence/blob/main/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/samihalawa/borme-intelligence/blob/main/TERMS.md"
+}
