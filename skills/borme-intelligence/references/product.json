@@ -23,9 +23,9 @@
     "Actos publicados y enlaces, sin una puntuación de riesgo inventada."
   ],
   "critique": "Una consulta de un único día era demasiado estrecha para la promesa de inteligencia empresarial. No había una vista cómoda de varios días.",
-  "change": "Consulta por intervalo, informe por anuncio y cobertura que conserva los días no comprobados.",
+  "change": "La nueva función borme_events lleva al usuario a una salida más directamente utilizable; Consulta por intervalo, informe por anuncio y cobertura que conserva los días no comprobados.",
   "limits": "No es un historial completo, monitor continuo, certificado registral ni evaluación crediticia. Una coincidencia de nombre no prueba identidad. No crea perfiles de personas.",
-  "tool": "borme_company_range",
+  "tool": "borme_events",
   "args": {
     "company": "LINGUASERVE",
     "start_date": "2026-10-19",
@@ -35,5 +35,5 @@
   },
   "extra": "Usa borme_company_range para 1–7 días o borme_company_notices para un día. Una fuente fallida no demuestra ausencia de actos. No infieras insolvencia, fraude, titular real o solvencia.",
   "slug": "borme-intelligence",
-  "version": "0.2.0"
+  "version": "0.3.0"
 }

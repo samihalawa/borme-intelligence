@@ -8,5 +8,10 @@
     "name": "borme_company_range",
     "signature": "(company: 'str', start_date: 'str', end_date: 'str', province: 'str' = 'MADRID', limit: 'int' = 20) -> 'dict[str, Any]'",
     "description": "Inspect one company/province over up to seven explicit days, preserving missing issues and failures. User-initiated lookup, not monitoring."
+  },
+  {
+    "name": "borme_events",
+    "signature": "(company: 'str', start_date: 'str', end_date: 'str', province: 'str' = 'MADRID', limit: 'int' = 20) -> 'dict[str, Any]'",
+    "description": "Classify dated BORME company notices conservatively using visible keyword rules; no credit/fraud predictions."
   }
 ]

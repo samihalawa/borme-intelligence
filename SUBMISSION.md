@@ -1,14 +1,10 @@
-# Claude review — BORME Intelligence 0.2.0
+# Claude review — BORME Intelligence 0.3.0
 
 Publisher: Sami Halawa · Contact: sami@samihalawa.com
 
 Repository: https://github.com/samihalawa/borme-intelligence
 
 Plugin at repository root. Stable identity: `borme-intelligence`.
-
-Public product page: https://samihalawa.github.io/borme-intelligence/
-
-Saved official-source report: https://samihalawa.github.io/borme-intelligence/demo.html
 
 ## Listing
 

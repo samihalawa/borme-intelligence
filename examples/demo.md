@@ -6,7 +6,7 @@ Los cambios de una empresa, con su fuente delante.
 
 1 filas mostradas. La cobertura y las limitaciones se indican al final.
 
-Captura guardada: 2026-10-20T16:20:04.929816+00:00.
+Captura guardada: 2026-10-20T16:59:24.525292+00:00.
 
 | Sociedad y anuncio | Publicación | Provincia | Acto publicado | Enlace |
 |---|---|---|---|---|
@@ -14,10 +14,10 @@ Captura guardada: 2026-10-20T16:20:04.929816+00:00.
 
 ## Fuentes
 
-- [Fuente oficial](https://www.boe.es/datosabiertos/api/borme/sumario/20261019) · Consulta: 2026-10-20T16:19:40.337345+00:00
-- [Fuente oficial](https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-201-28) · Consulta: 2026-10-20T16:19:40.867542+00:00
-- [Fuente oficial](https://www.boe.es/datosabiertos/api/borme/sumario/20261020) · Consulta: 2026-10-20T16:19:41.268585+00:00
-- [Fuente oficial](https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-202-28) · Consulta: 2026-10-20T16:19:43.495794+00:00
+- [Fuente oficial](https://www.boe.es/datosabiertos/api/borme/sumario/20261019) · Consulta: 2026-10-20T16:58:59.944859+00:00
+- [Fuente oficial](https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-201-28) · Consulta: 2026-10-20T16:59:00.637612+00:00
+- [Fuente oficial](https://www.boe.es/datosabiertos/api/borme/sumario/20261020) · Consulta: 2026-10-20T16:59:01.244165+00:00
+- [Fuente oficial](https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-202-28) · Consulta: 2026-10-20T16:59:01.838082+00:00
 
 ## Alcance
 
@@ -43,11 +43,15 @@ Captura guardada: 2026-10-20T16:20:04.929816+00:00.
       "partial": false,
       "returned": 1,
       "truncated": false,
-      "complete_company_history": false
+      "complete_company_history": false,
+      "event_category_counts_in_returned_rows": {
+        "capital_reduction": 1
+      }
     }
 
 ## Límites y comprobaciones
 
 - A missing/unavailable issue is not a no-filings result. Names are matches, not certified entity identity. No automatic monitoring is running.
+- Event categories are deterministic keyword signals applied to the preserved official notice text, not certified company status, economic risk or beneficial ownership.
 
 Software independiente de Sami Halawa. Conserva el JSON para inspeccionar todos los campos y textos completos.
