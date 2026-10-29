@@ -1,0 +1,14 @@
+**
+!Dockerfile
+!skills/
+!skills/borme-intelligence/
+!skills/borme-intelligence/scripts/
+!skills/borme-intelligence/scripts/**
+!skills/borme-intelligence/references/
+!skills/borme-intelligence/references/**
+!LICENSE
+!SECURITY.md
+!PRIVACY.md
+!SUPPORT.md
+**/__pycache__/
+**/*.pyc
