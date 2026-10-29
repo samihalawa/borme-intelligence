@@ -1,0 +1,177 @@
+{
+  "server": "borme-intelligence",
+  "version": "0.3.1",
+  "tools": [
+    {
+      "name": "borme_company_notices",
+      "title": "borme company notices",
+      "description": "Find corporate-name matches in one province's BORME registered-acts issue. Preserves official records; not a complete company history or credit assessment.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "company": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "province": {
+            "type": "string",
+            "default": "MADRID"
+          },
+          "limit": {
+            "type": "integer",
+            "default": 20
+          }
+        },
+        "required": [
+          "company",
+          "date"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "borme_company_range",
+      "title": "borme company range",
+      "description": "Inspect one company/province over up to seven explicit days, preserving missing issues and failures. User-initiated lookup, not monitoring.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "company": {
+            "type": "string"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "province": {
+            "type": "string",
+            "default": "MADRID"
+          },
+          "limit": {
+            "type": "integer",
+            "default": 20
+          }
+        },
+        "required": [
+          "company",
+          "start_date",
+          "end_date"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "borme_events",
+      "title": "borme events",
+      "description": "Classify dated BORME company notices conservatively using visible keyword rules; no credit/fraud predictions.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "company": {
+            "type": "string"
+          },
+          "start_date": {
+            "type": "string"
+          },
+          "end_date": {
+            "type": "string"
+          },
+          "province": {
+            "type": "string",
+            "default": "MADRID"
+          },
+          "limit": {
+            "type": "integer",
+            "default": 20
+          }
+        },
+        "required": [
+          "company",
+          "start_date",
+          "end_date"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "borme_intelligence_demo",
+      "title": "BORME Intelligence · ejemplo guardado",
+      "description": "Read the bundled dated example without network access. It is historical, never live.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "borme_intelligence_report",
+      "title": "BORME Intelligence · informe",
+      "description": "Return a deterministic Markdown, HTML or JSON report for one product operation or the saved example. Writes no files; preserve source dates and partial coverage.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "operation": {
+            "type": "string",
+            "enum": [
+              "borme_company_notices",
+              "borme_company_range",
+              "borme_events",
+              "borme_intelligence_demo"
+            ]
+          },
+          "arguments": {
+            "type": "object",
+            "default": {}
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "markdown",
+              "html",
+              "json"
+            ],
+            "default": "markdown"
+          }
+        },
+        "required": [
+          "operation"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    }
+  ]
+}

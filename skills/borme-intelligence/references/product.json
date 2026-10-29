@@ -35,5 +35,5 @@
   },
   "extra": "Usa borme_company_range para 1–7 días o borme_company_notices para un día. Una fuente fallida no demuestra ausencia de actos. No infieras insolvencia, fraude, titular real o solvencia.",
   "slug": "borme-intelligence",
-  "version": "0.3.0"
+  "version": "0.3.1"
 }
