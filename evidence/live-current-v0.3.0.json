@@ -1,0 +1,73 @@
+{
+  "version": "0.3.0",
+  "checked_at": "2026-10-23T09:12:20.030118+00:00",
+  "scope": "Current read-only requests using exact documented demo arguments. BOE/BORME dates are explicit historical query ranges. Bounded PLACSP responses explicitly preserve partial coverage. Does not validate production endpoint or infrastructure.",
+  "check": {
+    "slug": "borme-intelligence",
+    "tool": "borme_events",
+    "arguments": {
+      "company": "LINGUASERVE",
+      "start_date": "2026-10-19",
+      "end_date": "2026-10-20",
+      "province": "MADRID",
+      "limit": 5
+    },
+    "ok": true,
+    "returned": 1,
+    "sources": [
+      {
+        "url": "https://www.boe.es/datosabiertos/api/borme/sumario/20261019",
+        "retrieved_at": "2026-10-23T09:12:10.244282+00:00",
+        "sha256": "c1767948e57521cc7e9656aa27adb495e83c4a89dd466a1db82ab7ef7cfe7516",
+        "cache_hit": false
+      },
+      {
+        "url": "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-201-28",
+        "retrieved_at": "2026-10-23T09:12:11.425745+00:00",
+        "sha256": "af4d130fa6a16bf05eddfd2f8ef5467f844a0d538cd7d91de857c4d8e84ac9be",
+        "cache_hit": false
+      },
+      {
+        "url": "https://www.boe.es/datosabiertos/api/borme/sumario/20261020",
+        "retrieved_at": "2026-10-23T09:12:12.488024+00:00",
+        "sha256": "bb09dc78ba3812121f8f6328cd9e3950ef22e3c9a79419ab5a6f408038fc6df4",
+        "cache_hit": false
+      },
+      {
+        "url": "https://www.boe.es/diario_borme/xml.php?id=BORME-A-2026-202-28",
+        "retrieved_at": "2026-10-23T09:12:13.684623+00:00",
+        "sha256": "e81f20150a2daf086b56a91d70d5a6c9d4cd2d775a4f68e6d931bb1542634317",
+        "cache_hit": false
+      }
+    ],
+    "coverage": {
+      "company_query": "LINGUASERVE",
+      "province": "MADRID",
+      "start_date": "2026-10-19",
+      "end_date": "2026-10-20",
+      "days": [
+        {
+          "date": "2026-10-19",
+          "status": "checked",
+          "matches": 1,
+          "documents_scanned": 1
+        },
+        {
+          "date": "2026-10-20",
+          "status": "checked",
+          "matches": 0,
+          "documents_scanned": 1
+        }
+      ],
+      "partial": false,
+      "returned": 1,
+      "truncated": false,
+      "complete_company_history": false,
+      "event_category_counts_in_returned_rows": {
+        "capital_reduction": 1
+      }
+    },
+    "error": null,
+    "duration_seconds": 4.37
+  }
+}

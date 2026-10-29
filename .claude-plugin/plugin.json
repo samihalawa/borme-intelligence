@@ -1,7 +1,7 @@
 {
   "name": "borme-intelligence",
   "displayName": "BORME Intelligence",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "Consulta actos de una sociedad en el BORME por provincia y fecha, con rangos de hasta siete días y fuentes verificables.",
   "author": {
     "name": "Sami Halawa",
@@ -19,8 +19,9 @@
   "homepage": "https://samihalawa.github.io/borme-intelligence/",
   "repository": "https://github.com/samihalawa/borme-intelligence",
   "icon": "./assets/icon.png",
-  "documentationUrl": "https://github.com/samihalawa/borme-intelligence/blob/main/README.md",
-  "supportUrl": "https://github.com/samihalawa/borme-intelligence/blob/main/SUPPORT.md",
-  "privacyPolicyUrl": "https://github.com/samihalawa/borme-intelligence/blob/main/PRIVACY.md",
-  "termsOfServiceUrl": "https://github.com/samihalawa/borme-intelligence/blob/main/TERMS.md"
+  "documentationUrl": "https://github.com/samihalawa/borme-intelligence/blob/release/v0.3.0-local/README.md",
+  "supportUrl": "https://github.com/samihalawa/borme-intelligence/blob/release/v0.3.0-local/SUPPORT.md",
+  "privacyPolicyUrl": "https://github.com/samihalawa/borme-intelligence/blob/release/v0.3.0-local/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/samihalawa/borme-intelligence/blob/release/v0.3.0-local/TERMS.md",
+  "mcpServers": "./.mcp.json"
 }

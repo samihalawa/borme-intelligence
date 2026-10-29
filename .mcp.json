@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "borme-intelligence": {
+      "command": "python3",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/skills/borme-intelligence/scripts/mcp_server.py"
+      ]
+    }
+  }
+}
