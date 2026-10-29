@@ -1,0 +1,20 @@
+{
+  "name": "borme-intelligence",
+  "interface": {
+    "displayName": "BORME Intelligence"
+  },
+  "plugins": [
+    {
+      "name": "borme-intelligence",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -26,7 +26,7 @@ También: “Resume estos anuncios y distingue fecha de publicación, acto e ins
 
 La demostración es una **captura guardada de fuentes oficiales**, no una consulta actual. Conserva fecha, enlaces y alcance.
 
-## Instalar el candidato 0.3.1 en Claude Code
+## Instalar el versión 0.4.0 en Claude Code
 
 ```text
 /plugin install borme-intelligence --marketplace https://github.com/samihalawa/borme-intelligence.git#release/v0.3.0-local
@@ -41,6 +41,23 @@ claude plugin install borme-intelligence@borme-intelligence
 
 Después, pregunta en lenguaje natural o invoca `/borme-intelligence:borme-intelligence`.
 
+## Instalar en Codex
+
+```bash
+codex plugin marketplace add https://github.com/samihalawa/borme-intelligence --ref release/v0.3.0-local
+codex plugin add borme-intelligence@borme-intelligence
+```
+
+El paquete declara su MCP local en `mcp.json`; Claude utiliza `.mcp.json`. La instalación local y la disponibilidad en un directorio público son estados diferentes. OpenAI limita la publicación pública de MCP locales a organizaciones habilitadas; una carga privada no demuestra esa habilitación ni crea una conexión web/móvil.
+
+## Instalar en Grok Build
+
+```bash
+grok plugin install samihalawa/borme-intelligence@release/v0.3.0-local
+```
+
+Grok utiliza la configuración compatible `.mcp.json`; conserva el mismo MCP local y sus límites. La entrada en el catálogo oficial requiere la aceptación de sus mantenedores.
+
 ## Ejemplo sin conexión
 
 Pide al MCP declarado `borme-intelligence` la herramienta `borme_intelligence_demo`. El ejemplo conserva su fecha y sus fuentes; nunca se presenta como una consulta actual.
@@ -53,7 +70,7 @@ El anfitrión invoca `borme_events` con los argumentos descritos en [Esquemas MC
 
 | Entorno | Comportamiento |
 |---|---|
-| Claude Code con MCP habilitado y Python 3.11+ | Proceso MCP local declarado, adaptadores e informes. |
+| Claude Code o escritorio Codex/OpenAI compatible, MCP habilitado y Python 3.11+ | Proceso MCP local declarado, adaptadores e informes. |
 | Anfitrión sin MCP local | Solo navegación/archivos nativos autorizados; no se ejecutan scripts como alternativa ni se afirma haber ejecutado el adaptador. |
 | Sin red | Herramienta de ejemplo guardado; no se inventan datos actuales. |
 
@@ -78,3 +95,7 @@ No es un historial completo, monitor continuo, certificado registral ni evaluaci
 Las consultas en vivo envían únicamente los parámetros públicos necesarios de la consulta a los servicios oficiales identificados en [Fuentes y endpoints](skills/borme-intelligence/references/sources.md). El proveedor recibe esos parámetros y la dirección de red del entorno que ejecuta la consulta. No se envían credenciales, adjuntos, perfiles personales ni el historial de conversación. Estos accesos se realizan desde el MCP local declarado o las herramientas nativas autorizadas del anfitrión; no existe un conector público alojado. Los proxies con credenciales heredadas se rechazan antes de realizar una conexión.
 
 Las respuestas oficiales pueden contener nombres, direcciones u otros datos personales públicos. La caché local es solo de memoria, durante un máximo de cinco minutos mientras se ejecuta el proceso. Los resultados pueden permanecer en la conversación o en informes guardados explícitamente por el usuario; su conservación depende del anfitrión y del usuario. El editor no opera un servicio que reciba o almacene estos datos. Consulta [Privacidad](PRIVACY.md) para los detalles y los límites de reutilización.
+
+## Identidad visual
+
+Un símbolo sencillo identifica esta función y una pequeña bandera española marca el borde. No es un escudo ni un sello oficial, y no implica afiliación gubernamental. [Logo de ficha](assets/logo.png) · [Icono compacto](assets/icon.png).
