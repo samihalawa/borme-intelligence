@@ -1,13 +1,15 @@
-# Detailed source-specific workflow
+# Procedimiento — BORME Intelligence
 
+1. Parte de la denominación social, provincia y periodo que ya haya aportado el usuario. Resuelve homónimos usando datos registrales o identificadores presentes en los anuncios. Una coincidencia de nombre no confirma identidad; no atribuyas actos a otra sociedad por parecido. No busques personas ni solicites datos personales innecesarios.
+2. Abre el BORME oficial y revisa los sumarios y documentos de la provincia y fechas elegidas con navegación autorizada; también puedes trabajar con anuncios aportados por el usuario. Organiza periodos largos en bloques revisables, por ejemplo una semana, y registra cada día como «revisado / no publicado / no disponible / no examinado», según la evidencia. No confundas un día sin edición o una fuente fallida con ausencia de actos de la empresa.
+3. Conserva número de anuncio, denominación exacta, provincia, fecha de publicación, fecha del acto o inscripción cuando consten y datos registrales relevantes. Resume el acto sin borrar el enlace al texto original. La fecha de la edición no sustituye la fecha de inscripción. Si no has leído todo el anuncio, delimita el fragmento.
+4. Clasifica de forma descriptiva constitución, nombramiento, cese, cambio de domicilio, capital, corrección o disolución cuando el texto lo respalde. No conviertas estos hechos en inferencias de solvencia, riesgo de crédito, fraude, titularidad real, empleo o idoneidad de inversión. No recopiles perfiles o datos de contacto de las personas mencionadas.
+5. Entrega una cronología de hechos publicados y su cobertura. La certificación y situación jurídica completa corresponden al registro competente. Una revisión por fechas no acredita un historial completo ni activa vigilancia o alertas. Si el usuario aporta anuncios, limita la cobertura a esos documentos.
 
-1. Resolve company identity from the supplied legal name and province, and specify an issue date. Do not confuse similarly named entities. Use registry references or a company identifier in the source to disambiguate where available; a matching name alone is not proof of identity.
-2. Run `borme_company_notices` for one date and province. The implementation reads the official Section A province XML and matches company headings, not people mentioned inside notices. It is a bounded issue lookup, not a complete company history or an alerting service. If an issue or province document is unavailable, distinguish that failure from zero matches.
-3. Preserve the notice number, company heading, complete act text, publication date, registration details and official document link. Separate the act or registration date from the gazette publication date. Summarize event types without adding undisclosed financial or ownership conclusions.
-4. Treat an incorporation, capital change, appointment, resignation, correction, address change or dissolution as a published event. Do not infer solvency, creditworthiness, beneficial ownership, fraud, employment status or suitability for investment from it. Do not compile dossiers about private individuals or harvest personal contact details.
-5. Produce a concise event brief and identity limitations. A certification or complete current legal status requires the competent registry. Repeat-date checks are user-initiated unless a separately authorized native scheduler is actually configured.
+## Resultado esperado
 
-## Output
+Identidad buscada y grado de confirmación; provincia y fechas revisadas, incluidos días no comprobados; tabla con anuncio, sociedad, acto, fecha del acto/inscripción, publicación, referencia registral y enlace. Añade homónimos, lagunas y límites de interpretación.
 
-Entity identity and confidence; exact issue/province coverage; notice number; act and registration dates; concise event summary; official text links; limits of inference.
+## Sin acceso actual
 
+Trabaja solo con las fuentes y documentos que puedas abrir con las funciones nativas autorizadas. Identifica su fecha y sus lagunas. Si la revisión no está completa, delimita la parte comprobada; un error o una página inaccesible no equivale a cero resultados.

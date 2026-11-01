@@ -1,3 +1,5 @@
+> Documento histórico de una edición anterior. Conserva sus datos, fecha y procedencia; no es una consulta actual ni una función de ejecución de esta habilidad.
+
 # BORME Intelligence
 
 Los cambios de una empresa, con su fuente delante.

@@ -2,7 +2,7 @@
   "name": "BORME Intelligence",
   "promise": "Los cambios de una empresa, con su fuente delante.",
   "audience": "Consultoras y equipos B2B que comprueban actos societarios.",
-  "description": "Consulta actos de una sociedad en el BORME por provincia y fecha, con rangos de hasta siete días y fuentes verificables.",
+  "description": "Revisa actos de una sociedad en el BORME por provincia y periodo explícito, con fuentes verificables y cobertura declarada.",
   "short": "Actos societarios claros",
   "source": "BORME",
   "keywords": [
@@ -18,22 +18,12 @@
     "Muéstrame una ficha de ejemplo con el alcance exacto de la búsqueda."
   ],
   "benefits": [
-    "Una empresa, una provincia y un periodo explícito.",
-    "Hasta siete días por consulta, con incidencias por día.",
-    "Actos publicados y enlaces, sin una puntuación de riesgo inventada."
+    "Cronología de actos con textos y fechas de origen.",
+    "Cobertura por provincia y periodo, con lagunas visibles.",
+    "Hechos publicados separados de conclusiones de riesgo o identidad."
   ],
-  "critique": "Una consulta de un único día era demasiado estrecha para la promesa de inteligencia empresarial. No había una vista cómoda de varios días.",
-  "change": "La nueva función borme_events lleva al usuario a una salida más directamente utilizable; Consulta por intervalo, informe por anuncio y cobertura que conserva los días no comprobados.",
-  "limits": "No es un historial completo, monitor continuo, certificado registral ni evaluación crediticia. Una coincidencia de nombre no prueba identidad. No crea perfiles de personas.",
-  "tool": "borme_events",
-  "args": {
-    "company": "LINGUASERVE",
-    "start_date": "2026-10-19",
-    "end_date": "2026-10-20",
-    "province": "MADRID",
-    "limit": 5
-  },
-  "extra": "Usa borme_company_range para 1–7 días o borme_company_notices para un día. Una fuente fallida no demuestra ausencia de actos. No infieras insolvencia, fraude, titular real o solvencia.",
+  "limits": "No es un historial completo, monitor continuo, certificado registral ni evaluación crediticia. Un nombre coincidente no prueba identidad. No crea perfiles de personas.",
+  "extra": "Delimita sociedad, provincia y fechas; declara los días no examinados. Una fuente fallida no demuestra ausencia de actos. No infieras insolvencia, fraude, titular real ni solvencia.",
   "slug": "borme-intelligence",
-  "version": "0.4.0"
+  "version": "0.5.0"
 }

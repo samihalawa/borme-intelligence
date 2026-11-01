@@ -1,5 +1,11 @@
-# Terms of the distributed software
+# Condiciones — BORME Intelligence
 
-The code and accompanying original documentation are distributed under the included MIT licence, including its warranty disclaimer. Third-party data, service access, trademarks and dataset licences are not licensed by that grant. Follow each original provider’s reuse and access conditions.
+Las instrucciones originales se distribuyen bajo la licencia MIT del repositorio. Esa licencia no concede derechos sobre publicaciones oficiales, bases de datos, marcas ni documentos de terceros. Consulta las condiciones de cada fuente para su reutilización.
 
-This is an independent informational tool, not an official service, professional legal opinion, certification or promise of funding. Verify consequential decisions with the authoritative source and an appropriately qualified adviser where needed. No fee, subscription, checkout or purchase functionality is implemented. No additional contractual service commitment or support response time is asserted by this file.
+La habilidad ofrece un procedimiento de lectura y redacción mediante las funciones autorizadas del anfitrión y documentos aportados. No es un servicio oficial, certificación, representación profesional ni garantía de resultado. Las fuentes pueden cambiar, faltar o contener errores; el asistente debe conservar fechas, origen y límites.
+
+No es un historial completo, monitor continuo, certificado registral ni evaluación crediticia. Un nombre coincidente no prueba identidad. No crea perfiles de personas.
+
+El usuario y el anfitrión controlan la navegación, el tratamiento de documentos y la conservación de respuestas. No se debe usar esta habilidad para acceder a información protegida, revelar secretos ni ejecutar trámites o seguimiento no autorizados. Los ejemplos guardados son históricos y no sustituyen una comprobación actual.
+
+No hay relación ni respaldo de las autoridades públicas citadas. La disponibilidad de estas instrucciones no implica admisión en ningún directorio o compatibilidad verificada con todos los anfitriones.
