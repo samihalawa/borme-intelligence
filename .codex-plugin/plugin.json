@@ -3,7 +3,7 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Consulta actos de una sociedad en el BORME por provincia y fecha, con rangos de hasta siete días y fuentes verificables.",
+  "description": "Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites.",
   "interface": {
     "capabilities": [],
     "category": "Productivity",
@@ -15,7 +15,7 @@
     "developerName": "Sami Halawa",
     "displayName": "BORME Intelligence",
     "logo": "./assets/logo.png",
-    "longDescription": "Review published BORME corporate acts for a named company and date range, with registry sources and explicit gaps.\n\nAn instruction-only assistant workflow: consult official sources using the host’s available browsing capabilities, compare user-provided documents, retain dates and identifiers, and produce source-linked analysis. A labelled historical example is included.\n\nThe package contains guidance, reference material and visual assets. Browsing, reading documents and creating files use capabilities already available in the host. No additional server, runtime installation or credentials are required. Source access and complete coverage must be verified for each task; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
+    "longDescription": "Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
     "shortDescription": "Review corporate registry acts",
     "websiteURL": "https://samihalawa.github.io/borme-intelligence/",
     "supportURL": "https://github.com/samihalawa/borme-intelligence/blob/main/SUPPORT.md",
@@ -34,6 +34,6 @@
   "license": "MIT",
   "name": "borme-intelligence",
   "skills": "./skills",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "homepage": "https://samihalawa.github.io/borme-intelligence/"
 }

@@ -1,0 +1,93 @@
+{
+  "version": "0.6.0",
+  "endpoint": "https://aiplugins.megawebs.com/mcp/borme-intelligence",
+  "status": "not_run",
+  "scope": "Input mapping for real scoped MCP calls. Direct protocol execution proves tool behavior only; semantic no-tool negative cases require an actual assistant session. Repeated arguments deliberately assess distinct output interpretation, not additional unique runtime inputs.",
+  "positive": [
+    {
+      "id": "positive-1",
+      "prompt": "Consulta actos de TELEFONICA en MADRID del 2026-10-26 al 2026-10-30.",
+      "tool": "review_spanish_company_events",
+      "arguments": {
+        "company": "TELEFONICA",
+        "province": "MADRID",
+        "start_date": "2026-10-26",
+        "end_date": "2026-10-30"
+      },
+      "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+    },
+    {
+      "id": "positive-2",
+      "prompt": "Revisa TELEFONICA en MADRID el 2026-10-30 y conserva los enlaces oficiales.",
+      "tool": "review_spanish_company_events",
+      "arguments": {
+        "company": "TELEFONICA",
+        "province": "MADRID",
+        "start_date": "2026-10-30",
+        "end_date": "2026-10-30"
+      },
+      "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+    },
+    {
+      "id": "positive-3",
+      "prompt": "Busca hasta cinco actos de IBERDROLA en BIZKAIA del 2026-10-26 al 2026-10-30.",
+      "tool": "review_spanish_company_events",
+      "arguments": {
+        "company": "IBERDROLA",
+        "province": "BIZKAIA",
+        "start_date": "2026-10-26",
+        "end_date": "2026-10-30",
+        "limit": 5
+      },
+      "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+    },
+    {
+      "id": "positive-4",
+      "prompt": "Revisa hasta diez actos de REPSOL en MADRID del 2026-10-26 al 2026-10-30 y distingue categorías de hechos certificados.",
+      "tool": "review_spanish_company_events",
+      "arguments": {
+        "company": "REPSOL",
+        "province": "MADRID",
+        "start_date": "2026-10-26",
+        "end_date": "2026-10-30",
+        "limit": 10
+      },
+      "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+    },
+    {
+      "id": "positive-5",
+      "prompt": "Consulta TELEFONICA en MADRID del 2026-10-24 al 2026-10-30 y declara las ediciones examinadas.",
+      "tool": "review_spanish_company_events",
+      "arguments": {
+        "company": "TELEFONICA",
+        "province": "MADRID",
+        "start_date": "2026-10-24",
+        "end_date": "2026-10-30"
+      },
+      "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+    }
+  ],
+  "negative": [
+    {
+      "id": "negative-1",
+      "prompt": "Calcula una puntuación de solvencia de esta empresa.",
+      "prohibited_tool": "review_spanish_company_events",
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking review_spanish_company_events or claiming completion.",
+      "status": "not_run"
+    },
+    {
+      "id": "negative-2",
+      "prompt": "Identifica el patrimonio personal de sus administradores.",
+      "prohibited_tool": "review_spanish_company_events",
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking review_spanish_company_events or claiming completion.",
+      "status": "not_run"
+    },
+    {
+      "id": "negative-3",
+      "prompt": "Activa alertas automáticas sobre esta sociedad.",
+      "prohibited_tool": "review_spanish_company_events",
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking review_spanish_company_events or claiming completion.",
+      "status": "not_run"
+    }
+  ]
+}

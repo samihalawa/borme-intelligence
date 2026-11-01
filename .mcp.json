@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "borme-intelligence": {
+      "type": "http",
+      "url": "https://aiplugins.megawebs.com/mcp/borme-intelligence"
+    }
+  }
+}

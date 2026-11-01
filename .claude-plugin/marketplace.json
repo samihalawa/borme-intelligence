@@ -5,15 +5,15 @@
     "email": "sami@samihalawa.com"
   },
   "metadata": {
-    "description": "Consulta actos de una sociedad en el BORME por provincia y fecha, con rangos de hasta siete días y fuentes verificables.",
-    "version": "0.5.0"
+    "description": "Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites.",
+    "version": "0.6.0"
   },
   "plugins": [
     {
       "name": "borme-intelligence",
       "source": "./",
-      "description": "Consulta actos de una sociedad en el BORME por provincia y fecha, con rangos de hasta siete días y fuentes verificables.",
-      "version": "0.5.0"
+      "description": "Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites.",
+      "version": "0.6.0"
     }
   ]
 }
