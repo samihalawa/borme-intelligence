@@ -1,7 +1,7 @@
 {
   "name": "borme-intelligence",
   "displayName": "BORME Intelligence",
-  "version": "0.6.0",
+  "version": "0.6.2",
   "description": "Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites.",
   "author": {
     "name": "Sami Halawa",
@@ -16,11 +16,11 @@
     "registro-mercantil",
     "b2b"
   ],
-  "homepage": "https://samihalawa.github.io/borme-intelligence/",
+  "homepage": "https://aiplugins.megawebs.com/plugins/borme-intelligence",
   "repository": "https://github.com/samihalawa/borme-intelligence",
   "icon": "./assets/icon.png",
   "documentationUrl": "https://github.com/samihalawa/borme-intelligence/blob/main/README.md",
-  "supportUrl": "https://github.com/samihalawa/borme-intelligence/blob/main/SUPPORT.md",
-  "privacyPolicyUrl": "https://github.com/samihalawa/borme-intelligence/blob/main/PRIVACY.md",
-  "termsOfServiceUrl": "https://github.com/samihalawa/borme-intelligence/blob/main/TERMS.md"
+  "supportUrl": "https://aiplugins.megawebs.com/plugins/borme-intelligence/support",
+  "privacyPolicyUrl": "https://aiplugins.megawebs.com/plugins/borme-intelligence/privacy",
+  "termsOfServiceUrl": "https://aiplugins.megawebs.com/plugins/borme-intelligence/terms"
 }

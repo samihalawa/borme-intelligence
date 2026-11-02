@@ -1,4 +1,4 @@
-# Acceso al conector — BORME Intelligence 0.6.0
+# Acceso al conector — BORME Intelligence 0.6.2
 
 Endpoint MCP Streamable HTTP: `https://aiplugins.megawebs.com/mcp/borme-intelligence`. Herramienta: `review_spanish_company_events`. Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites.
 

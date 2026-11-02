@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites.",
-    "version": "0.6.0"
+    "version": "0.6.2"
   },
   "plugins": [
     {
       "name": "borme-intelligence",
       "source": "./",
       "description": "Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites.",
-      "version": "0.6.0"
+      "version": "0.6.2"
     }
   ]
 }

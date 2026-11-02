@@ -25,7 +25,7 @@
   "limits": "No es un historial completo, monitor continuo, certificado registral ni evaluación crediticia. Un nombre coincidente no prueba identidad. No crea perfiles de personas.",
   "extra": "Delimita sociedad, provincia y fechas; declara los días no examinados. Una fuente fallida no demuestra ausencia de actos. No infieras insolvencia, fraude, titular real ni solvencia.",
   "slug": "borme-intelligence",
-  "version": "0.6.0",
+  "version": "0.6.2",
   "mode": "hosted-read-only-mcp-with-guidance",
   "guidance": "Consulta pública con conector MCP alojado e instrucciones complementarias; conserva fuentes, fechas y cobertura real."
 }
