@@ -1,7 +1,7 @@
 {
   "name": "borme-intelligence",
   "displayName": "BORME Intelligence",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites.",
   "author": {
     "name": "Sami Halawa",

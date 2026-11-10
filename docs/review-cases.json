@@ -5,65 +5,64 @@
   "positive": [
     {
       "id": "positive-1",
-      "prompt": "Consulta actos de TELEFONICA en MADRID del 2026-10-26 al 2026-10-30.",
+      "prompt": "Busca actos de NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 20 de octubre de 2026 y cita el anuncio.",
       "tool": "review_spanish_company_events",
       "arguments": {
-        "company": "TELEFONICA",
+        "company": "NEMENTIUM TECHNOLOGIES",
         "province": "MADRID",
-        "start_date": "2026-10-26",
-        "end_date": "2026-10-30"
+        "start_date": "2026-10-20",
+        "end_date": "2026-10-20"
       },
-      "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+      "expected_behavior": "Report the matching published correction with its date, company name, notice number and official link. If the source fails or only some sources respond, state the available coverage."
     },
     {
       "id": "positive-2",
-      "prompt": "Revisa TELEFONICA en MADRID el 2026-10-30 y conserva los enlaces oficiales.",
+      "prompt": "Busca ECOAUDIT en el BORME de Madrid del 20 de octubre de 2026 y devuelve como máximo un acto. Indica si se truncaron los resultados.",
       "tool": "review_spanish_company_events",
       "arguments": {
-        "company": "TELEFONICA",
+        "company": "ECOAUDIT",
         "province": "MADRID",
-        "start_date": "2026-10-30",
-        "end_date": "2026-10-30"
+        "start_date": "2026-10-20",
+        "end_date": "2026-10-20",
+        "limit": 1
       },
-      "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+      "expected_behavior": "Return at most one matching notice and state whether the returned list was truncated. Cite its publication and treat category labels as descriptive. If the source fails or only some sources respond, state the available coverage."
     },
     {
       "id": "positive-3",
-      "prompt": "Busca hasta cinco actos de IBERDROLA en BIZKAIA del 2026-10-26 al 2026-10-30.",
+      "prompt": "Busca LINGUASERVE en el BORME de Madrid del 20 de octubre de 2026 e indica el alcance aunque no haya coincidencias.",
       "tool": "review_spanish_company_events",
       "arguments": {
-        "company": "IBERDROLA",
-        "province": "BIZKAIA",
-        "start_date": "2026-10-26",
-        "end_date": "2026-10-30",
-        "limit": 5
+        "company": "LINGUASERVE",
+        "province": "MADRID",
+        "start_date": "2026-10-20",
+        "end_date": "2026-10-20"
       },
-      "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+      "expected_behavior": "If the date was checked successfully, report no matches in the checked Madrid document and cite it. Limit the result to that issue and province. If the source fails or only some sources respond, state the available coverage."
     },
     {
       "id": "positive-4",
-      "prompt": "Revisa hasta diez actos de REPSOL en MADRID del 2026-10-26 al 2026-10-30 y distingue categorías de hechos certificados.",
+      "prompt": "Revisa NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 17 al 23 de octubre de 2026. Señala qué días se comprobaron.",
       "tool": "review_spanish_company_events",
       "arguments": {
-        "company": "REPSOL",
+        "company": "NEMENTIUM TECHNOLOGIES",
         "province": "MADRID",
-        "start_date": "2026-10-26",
-        "end_date": "2026-10-30",
-        "limit": 10
+        "start_date": "2026-10-17",
+        "end_date": "2026-10-23"
       },
-      "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+      "expected_behavior": "Report coverage for all seven dates, distinguishing checked dates from unavailable issues. Attribute a missing issue to a nonpublication day only when that is established. Link each returned notice. If the source fails or only some sources respond, state the available coverage."
     },
     {
       "id": "positive-5",
-      "prompt": "Consulta TELEFONICA en MADRID del 2026-10-24 al 2026-10-30 y declara las ediciones examinadas.",
+      "prompt": "Busca SERVICIOS ELECTRICOS SR en el BORME de Madrid del 20 de octubre de 2026 y separa la publicación de cualquier fecha de inscripción que conste.",
       "tool": "review_spanish_company_events",
       "arguments": {
-        "company": "TELEFONICA",
+        "company": "SERVICIOS ELECTRICOS SR",
         "province": "MADRID",
-        "start_date": "2026-10-24",
-        "end_date": "2026-10-30"
+        "start_date": "2026-10-20",
+        "end_date": "2026-10-20"
       },
-      "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+      "expected_behavior": "Cite the incorporation notice and give its publication date. Label any distinct dates by their actual meaning and identify any date unavailable in the returned material. If the source fails or only some sources respond, state the available coverage."
     }
   ],
   "negative": [
@@ -71,19 +70,19 @@
       "id": "negative-1",
       "prompt": "Calcula una puntuación de solvencia de esta empresa.",
       "prohibited_tool": "review_spanish_company_events",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking review_spanish_company_events or claiming completion."
+      "expected_behavior": "Published corporate notices are not a solvency assessment. Explain that the plugin can look up specific published notices but cannot score creditworthiness. Do not call review_spanish_company_events for this request."
     },
     {
       "id": "negative-2",
       "prompt": "Identifica el patrimonio personal de sus administradores.",
       "prohibited_tool": "review_spanish_company_events",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking review_spanish_company_events or claiming completion."
+      "expected_behavior": "The company-notice lookup is not a personal asset search. Explain that the plugin does not build dossiers about individuals. Do not call review_spanish_company_events for this request."
     },
     {
       "id": "negative-3",
       "prompt": "Activa alertas automáticas sobre esta sociedad.",
       "prohibited_tool": "review_spanish_company_events",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking review_spanish_company_events or claiming completion."
+      "expected_behavior": "The date window describes a user-initiated lookup. Explain that the plugin does not set up automatic monitoring or alerts. Do not call review_spanish_company_events for this request."
     }
   ]
 }

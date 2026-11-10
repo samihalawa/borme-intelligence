@@ -9,14 +9,15 @@
     "category": "Productivity",
     "composerIcon": "./assets/icon.png",
     "defaultPrompt": [
-      "Check a company in a specified BORME issue and show the exact registered acts.",
-      "Explain these corporate notices without assuming they prove current ownership."
+      "Busca NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 20 de octubre de 2026.",
+      "Busca ECOAUDIT en el BORME de Madrid del 20 de octubre de 2026 y cita los anuncios.",
+      "Revisa NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 17 al 23 de octubre de 2026."
     ],
     "developerName": "Sami Halawa",
     "displayName": "BORME Intelligence",
     "logo": "./assets/logo.png",
-    "longDescription": "Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
-    "shortDescription": "Review corporate registry acts",
+    "longDescription": "Find published company notices in Spain’s Official Commercial Registry Gazette (BORME). Search by company name and province for up to seven days, then review matching notices and the coverage of each edition. Source links and descriptive categories help you trace company changes to the published record.",
+    "shortDescription": "Find Spanish company notices",
     "websiteURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence",
     "supportURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence/support",
     "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence/privacy",
@@ -34,7 +35,7 @@
   "license": "MIT",
   "name": "borme-intelligence",
   "skills": "./skills",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "homepage": "https://aiplugins.megawebs.com/plugins/borme-intelligence",
   "extensions": {
     "com.openai": {

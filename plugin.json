@@ -4,7 +4,7 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites.",
+  "description": "Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete d\u00edas, conservando fuente y l\u00edmites.",
   "extensions": {
     "com.openai": {
       "interface": {
@@ -12,14 +12,15 @@
         "category": "Productivity",
         "composerIcon": "./assets/icon.png",
         "defaultPrompt": [
-          "Check a company in a specified BORME issue and show the exact registered acts.",
-          "Explain these corporate notices without assuming they prove current ownership."
+          "Busca NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 20 de octubre de 2026.",
+          "Busca ECOAUDIT en el BORME de Madrid del 20 de octubre de 2026 y cita los anuncios.",
+          "Revisa NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 17 al 23 de octubre de 2026."
         ],
         "developerName": "Sami Halawa",
         "displayName": "BORME Intelligence",
         "logo": "./assets/logo.png",
-        "longDescription": "Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
-        "shortDescription": "Review corporate registry acts",
+        "longDescription": "Find published company notices in Spain\u2019s Official Commercial Registry Gazette (BORME). Search by company name and province for up to seven days, then review matching notices and the coverage of each edition. Source links and descriptive categories help you trace company changes to the published record.",
+        "shortDescription": "Find Spanish company notices",
         "websiteURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence",
         "supportURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence/support",
         "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence/privacy",
@@ -27,68 +28,68 @@
       },
       "review": {
         "prompts": [
-          "Consulta actos de TELEFONICA en MADRID del 2026-10-26 al 2026-10-30.",
-          "Revisa TELEFONICA en MADRID el 2026-10-30 y conserva los enlaces oficiales.",
-          "Busca hasta cinco actos de IBERDROLA en BIZKAIA del 2026-10-26 al 2026-10-30."
+          "Busca actos de NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 20 de octubre de 2026 y cita el anuncio.",
+          "Busca ECOAUDIT en el BORME de Madrid del 20 de octubre de 2026 y devuelve como m\u00e1ximo un acto. Indica si se truncaron los resultados.",
+          "Busca LINGUASERVE en el BORME de Madrid del 20 de octubre de 2026 e indica el alcance aunque no haya coincidencias."
         ],
         "commerce": false,
         "commerce_description": "Read-only official-source queries and assistant guidance; no checkout, payment or purchase functionality.",
         "test_cases": {
           "positive": [
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 1.",
-              "prompt": "Consulta actos de TELEFONICA en MADRID del 2026-10-26 al 2026-10-30.",
+              "description": "Read a published company correction",
+              "prompt": "Busca actos de NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 20 de octubre de 2026 y cita el anuncio.",
               "tools_triggered": "review_spanish_company_events",
-              "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+              "expected_behavior": "Report the matching published correction with its date, company name, notice number and official link. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 2.",
-              "prompt": "Revisa TELEFONICA en MADRID el 2026-10-30 y conserva los enlaces oficiales.",
+              "description": "Bound matches to one result",
+              "prompt": "Busca ECOAUDIT en el BORME de Madrid del 20 de octubre de 2026 y devuelve como m\u00e1ximo un acto. Indica si se truncaron los resultados.",
               "tools_triggered": "review_spanish_company_events",
-              "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+              "expected_behavior": "Return at most one matching notice and state whether the returned list was truncated. Cite its publication and treat category labels as descriptive. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 3.",
-              "prompt": "Busca hasta cinco actos de IBERDROLA en BIZKAIA del 2026-10-26 al 2026-10-30.",
+              "description": "Distinguish a company search with no matches",
+              "prompt": "Busca LINGUASERVE en el BORME de Madrid del 20 de octubre de 2026 e indica el alcance aunque no haya coincidencias.",
               "tools_triggered": "review_spanish_company_events",
-              "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+              "expected_behavior": "If the date was checked successfully, report no matches in the checked Madrid document and cite it. Limit the result to that issue and province. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 4.",
-              "prompt": "Revisa hasta diez actos de REPSOL en MADRID del 2026-10-26 al 2026-10-30 y distingue categorías de hechos certificados.",
+              "description": "Report coverage for a full seven-day window",
+              "prompt": "Revisa NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 17 al 23 de octubre de 2026. Se\u00f1ala qu\u00e9 d\u00edas se comprobaron.",
               "tools_triggered": "review_spanish_company_events",
-              "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+              "expected_behavior": "Report coverage for all seven dates, distinguishing checked dates from unavailable issues. Attribute a missing issue to a nonpublication day only when that is established. Link each returned notice. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 5.",
-              "prompt": "Consulta TELEFONICA en MADRID del 2026-10-24 al 2026-10-30 y declara las ediciones examinadas.",
+              "description": "Separate publication from registration",
+              "prompt": "Busca SERVICIOS ELECTRICOS SR en el BORME de Madrid del 20 de octubre de 2026 y separa la publicaci\u00f3n de cualquier fecha de inscripci\u00f3n que conste.",
               "tools_triggered": "review_spanish_company_events",
-              "expected_behavior": "Call review_spanish_company_events using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review one company’s official BORME notices by province over up to seven days, preserving sources and coverage limits."
+              "expected_behavior": "Cite the incorporation notice and give its publication date. Label any distinct dates by their actual meaning and identify any date unavailable in the returned material. If the source fails or only some sources respond, state the available coverage."
             }
           ],
           "negative": [
             {
-              "description": "Outside this tool’s scope. Explain the unsupported action without invoking review_spanish_company_events or claiming completion.",
-              "prompt": "Calcula una puntuación de solvencia de esta empresa."
+              "description": "Published corporate notices are not a solvency assessment. Explain that the plugin can look up specific published notices but cannot score creditworthiness. Do not call review_spanish_company_events for this request.",
+              "prompt": "Calcula una puntuaci\u00f3n de solvencia de esta empresa."
             },
             {
-              "description": "Outside this tool’s scope. Explain the unsupported action without invoking review_spanish_company_events or claiming completion.",
+              "description": "The company-notice lookup is not a personal asset search. Explain that the plugin does not build dossiers about individuals. Do not call review_spanish_company_events for this request.",
               "prompt": "Identifica el patrimonio personal de sus administradores."
             },
             {
-              "description": "Outside this tool’s scope. Explain the unsupported action without invoking review_spanish_company_events or claiming completion.",
-              "prompt": "Activa alertas automáticas sobre esta sociedad."
+              "description": "The date window describes a user-initiated lookup. Explain that the plugin does not set up automatic monitoring or alerts. Do not call review_spanish_company_events for this request.",
+              "prompt": "Activa alertas autom\u00e1ticas sobre esta sociedad."
             }
           ]
         },
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
       },
       "publication": {
-        "release_notes": "0.6.2 moves product, privacy, terms and support pages to the unified Megawebs Plugins website. The hosted read-only tools and their behavior are unchanged.",
+        "release_notes": "Adds review examples for company searches across exact dates and provinces.",
         "translations": {
           "es-ES": {
             "subtitle": "Actos societarios claros",
-            "description": "Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites.\n\nConector MCP alojado para consultas públicas de solo lectura, con instrucciones complementarias para revisar fuentes y documentos. Conserva fechas, identificadores, enlaces y límites. No requiere Python local ni claves del editor. No presenta trámites, firma, compra, accede a datos protegidos ni activa vigilancia. Los ejemplos guardados son históricos."
+            "description": "Localiza anuncios de una sociedad en el BORME por nombre, provincia y un periodo de hasta siete d\u00edas. Revisa las coincidencias y el alcance de cada edici\u00f3n. Los enlaces oficiales y las categor\u00edas descriptivas permiten contrastar los cambios con el anuncio publicado."
           }
         }
       }
@@ -105,7 +106,7 @@
   ],
   "license": "MIT",
   "name": "borme-intelligence",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "homepage": "https://aiplugins.megawebs.com/plugins/borme-intelligence",
   "repository": "https://github.com/samihalawa/borme-intelligence"
 }

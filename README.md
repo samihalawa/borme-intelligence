@@ -4,9 +4,14 @@
 
 Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites.
 
-**Versión 0.6.2 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
+**Versión 0.6.3 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
 
 ## Instalación y uso
+
+```bash
+/plugin install borme-intelligence --marketplace samihalawa/2026-MASTER-Marketplace-Plugins-Connectors-etc
+```
+
 
 Instala el paquete en un anfitrión compatible con plugins y MCP remoto. La configuración incluida conecta `https://aiplugins.megawebs.com/mcp/borme-intelligence` mediante Streamable HTTP y expone `review_spanish_company_events`. No necesitas Python local, instalar dependencias ni proporcionar una clave del editor. La disponibilidad de la conexión depende del anfitrión y de la fuente pública.
 
