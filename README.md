@@ -1,5 +1,3 @@
-![Icono de BORME Intelligence](assets/icon.png)
-
 # BORME Intelligence
 
 Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites.
