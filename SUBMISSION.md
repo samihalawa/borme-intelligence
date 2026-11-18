@@ -1,4 +1,4 @@
-# Revisión — BORME Intelligence 0.6.2
+# Revisión — Spain Companies 0.6.4
 
 Paquete remoto con una herramienta: `review_spanish_company_events` en `https://aiplugins.megawebs.com/mcp/borme-intelligence`. Casos: cinco positivos y tres negativos en `plugin.json`. Las variantes cubren entradas o límites distintos; las fuentes dinámicas pueden devolver errores o cobertura parcial, que deben declararse sin fabricar resultados.
 

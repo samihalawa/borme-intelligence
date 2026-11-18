@@ -1,15 +1,15 @@
 ---
 name: borme-intelligence
-description: "Investigar anuncios mercantiles de una sociedad por nombre, provincia y periodo explícito, preservando la identidad dudosa y los días o documentos no examinados."
+description: "Use when the user wants to find published Spanish company changes and commercial registry notices (empresas y actos societarios): incorporations, appointments, resignations, capital, address changes and dissolutions in BORME."
 ---
 
-# BORME Intelligence
+# Spain Companies
 
 Los cambios de una empresa, con su fuente delante. Revisa actos de una sociedad en el BORME por provincia y periodo explícito, con fuentes verificables y cobertura declarada.
 
 ## Uso
 
-Esta edición 0.6.2 incluye el conector MCP alojado `review_spanish_company_events` en `https://aiplugins.megawebs.com/mcp/borme-intelligence`. Úsalo para su consulta pública de solo lectura: Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
+Esta edición 0.6.4 incluye el conector MCP alojado `review_spanish_company_events` en `https://aiplugins.megawebs.com/mcp/borme-intelligence`. Úsalo para su consulta pública de solo lectura: Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
 
 Responde en el idioma del usuario. Reutiliza los datos ya facilitados. Consulta `references/workflow.md` para el procedimiento específico, `references/sources.md` para las fuentes oficiales y `references/runtime.md` para acceso y privacidad. Si faltan datos que cambien la conclusión, concreta la incertidumbre; no inventes identificadores, documentos ni consultas.
 

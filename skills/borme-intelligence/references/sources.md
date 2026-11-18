@@ -1,4 +1,4 @@
-# Fuentes oficiales — BORME Intelligence
+# Fuentes oficiales — Spain Companies
 
 - [BORME open-data API](https://www.boe.es/datosabiertos/api/api.php)
 - [Official BORME](https://www.boe.es/diario_borme/)

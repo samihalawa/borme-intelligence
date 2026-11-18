@@ -1,21 +1,26 @@
 {
-  "name": "BORME Intelligence",
+  "name": "Spain Companies",
   "promise": "Los cambios de una empresa, con su fuente delante.",
   "audience": "Consultoras y equipos B2B que comprueban actos societarios.",
-  "description": "Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites.",
-  "short": "Actos societarios claros",
+  "description": "Find published Spanish company changes and commercial registry notices (empresas y actos societarios): incorporations, appointments, resignations, capital, address changes and dissolutions in BORME.",
+  "short": "Empresas y actos societarios",
   "source": "BORME",
   "keywords": [
-    "borme",
+    "spain",
+    "companies",
+    "company filings",
+    "company changes",
     "empresas",
-    "actos-societarios",
-    "registro-mercantil",
-    "b2b"
+    "sociedades",
+    "registro mercantil",
+    "BORME",
+    "constitución",
+    "capital"
   ],
   "prompts": [
-    "Busca actos de LINGUASERVE en Madrid entre el 19 y el 20 de octubre de 2026.",
-    "Resume estos anuncios y distingue fecha de publicación, acto e inscripción.",
-    "Muéstrame una ficha de ejemplo con el alcance exacto de la búsqueda."
+    "Busca cambios publicados de NEMENTIUM TECHNOLOGIES en Madrid el 20 de octubre de 2026.",
+    "Find ECOAUDIT company filings in Madrid on 20 October 2026 and cite the registry notices.",
+    "Revisa constituciones y nombramientos de SERVICIOS ELECTRICOS SR en Madrid el 20 de octubre de 2026."
   ],
   "benefits": [
     "Cronología de actos con textos y fechas de origen.",
@@ -25,7 +30,7 @@
   "limits": "No es un historial completo, monitor continuo, certificado registral ni evaluación crediticia. Un nombre coincidente no prueba identidad. No crea perfiles de personas.",
   "extra": "Delimita sociedad, provincia y fechas; declara los días no examinados. Una fuente fallida no demuestra ausencia de actos. No infieras insolvencia, fraude, titular real ni solvencia.",
   "slug": "borme-intelligence",
-  "version": "0.6.2",
+  "version": "0.6.4",
   "mode": "hosted-read-only-mcp-with-guidance",
   "guidance": "Consulta pública con conector MCP alojado e instrucciones complementarias; conserva fuentes, fechas y cobertura real."
 }

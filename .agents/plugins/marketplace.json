@@ -1,7 +1,7 @@
 {
   "name": "borme-intelligence",
   "interface": {
-    "displayName": "BORME Intelligence"
+    "displayName": "Spain Companies"
   },
   "plugins": [
     {
@@ -14,7 +14,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "category": "Productivity"
+      "category": "Business & Operations"
     }
   ]
 }

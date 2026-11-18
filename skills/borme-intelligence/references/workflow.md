@@ -1,4 +1,4 @@
-# Procedimiento — BORME Intelligence
+# Procedimiento — Spain Companies
 
 1. Parte de la denominación social, provincia y periodo que ya haya aportado el usuario. Resuelve homónimos usando datos registrales o identificadores presentes en los anuncios. Una coincidencia de nombre no confirma identidad; no atribuyas actos a otra sociedad por parecido. No busques personas ni solicites datos personales innecesarios.
 2. Abre el BORME oficial y revisa los sumarios y documentos de la provincia y fechas elegidas con navegación autorizada; también puedes trabajar con anuncios aportados por el usuario. Organiza periodos largos en bloques revisables, por ejemplo una semana, y registra cada día como «revisado / no publicado / no disponible / no examinado», según la evidencia. No confundas un día sin edición o una fuente fallida con ausencia de actos de la empresa.

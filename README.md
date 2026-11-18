@@ -1,8 +1,8 @@
-# BORME Intelligence
+# Spain Companies
 
-Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites.
+Find published Spanish company changes and commercial registry notices (empresas y actos societarios): incorporations, appointments, resignations, capital, address changes and dissolutions in BORME.
 
-**Versión 0.6.3 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
+**Versión 0.6.4 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
 
 ## Instalación y uso
 

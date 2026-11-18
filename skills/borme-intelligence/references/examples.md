@@ -1,4 +1,4 @@
-# Ejemplos y escenarios de revisión — BORME Intelligence
+# Ejemplos históricos y escenarios — Spain Companies
 
 Pide: «Busca actos de LINGUASERVE en Madrid entre el 19 y el 20 de octubre de 2026». Es un intervalo histórico explícito; distingue publicación de inscripción. demo.json y el informe guardado muestran una captura histórica de anuncios y no certifican el estado actual de la sociedad.
 

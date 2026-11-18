@@ -4,23 +4,23 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete d\u00edas, conservando fuente y l\u00edmites.",
+  "description": "Find published Spanish company changes and commercial registry notices (empresas y actos societarios): incorporations, appointments, resignations, capital, address changes and dissolutions in BORME.",
   "extensions": {
     "com.openai": {
       "interface": {
         "capabilities": [],
-        "category": "Productivity",
+        "category": "Business & Operations",
         "composerIcon": "./assets/icon.png",
         "defaultPrompt": [
-          "Busca NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 20 de octubre de 2026.",
-          "Busca ECOAUDIT en el BORME de Madrid del 20 de octubre de 2026 y cita los anuncios.",
-          "Revisa NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 17 al 23 de octubre de 2026."
+          "Busca cambios publicados de NEMENTIUM TECHNOLOGIES en Madrid el 20 de octubre de 2026.",
+          "Find ECOAUDIT company filings in Madrid on 20 October 2026 and cite the registry notices.",
+          "Revisa constituciones y nombramientos de SERVICIOS ELECTRICOS SR en Madrid el 20 de octubre de 2026."
         ],
         "developerName": "Sami Halawa",
-        "displayName": "BORME Intelligence",
+        "displayName": "Spain Companies",
         "logo": "./assets/logo.png",
-        "longDescription": "Find published company notices in Spain\u2019s Official Commercial Registry Gazette (BORME). Search by company name and province for up to seven days, then review matching notices and the coverage of each edition. Source links and descriptive categories help you trace company changes to the published record.",
-        "shortDescription": "Find Spanish company notices",
+        "longDescription": "Research published changes to Spanish companies with links to the original commercial registry notices. Search a company name, province and date range of up to seven days in BORME, Spain’s Official Commercial Registry Gazette. Review matching notices for incorporations, appointments and resignations, registered address or capital changes, corrections and dissolutions when present in the source. See the publication date, available registration details and which editions were checked. This is a lookup of published notices, not a complete company report, annual accounts or balance-sheet service, credit score or registry certificate.",
+        "shortDescription": "Company changes and filings",
         "websiteURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence",
         "supportURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence/support",
         "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence/privacy",
@@ -29,7 +29,7 @@
       "review": {
         "prompts": [
           "Busca actos de NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 20 de octubre de 2026 y cita el anuncio.",
-          "Busca ECOAUDIT en el BORME de Madrid del 20 de octubre de 2026 y devuelve como m\u00e1ximo un acto. Indica si se truncaron los resultados.",
+          "Busca ECOAUDIT en el BORME de Madrid del 20 de octubre de 2026 y devuelve como máximo un acto. Indica si se truncaron los resultados.",
           "Busca LINGUASERVE en el BORME de Madrid del 20 de octubre de 2026 e indica el alcance aunque no haya coincidencias."
         ],
         "commerce": false,
@@ -44,7 +44,7 @@
             },
             {
               "description": "Bound matches to one result",
-              "prompt": "Busca ECOAUDIT en el BORME de Madrid del 20 de octubre de 2026 y devuelve como m\u00e1ximo un acto. Indica si se truncaron los resultados.",
+              "prompt": "Busca ECOAUDIT en el BORME de Madrid del 20 de octubre de 2026 y devuelve como máximo un acto. Indica si se truncaron los resultados.",
               "tools_triggered": "review_spanish_company_events",
               "expected_behavior": "Return at most one matching notice and state whether the returned list was truncated. Cite its publication and treat category labels as descriptive. If the source fails or only some sources respond, state the available coverage."
             },
@@ -56,13 +56,13 @@
             },
             {
               "description": "Report coverage for a full seven-day window",
-              "prompt": "Revisa NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 17 al 23 de octubre de 2026. Se\u00f1ala qu\u00e9 d\u00edas se comprobaron.",
+              "prompt": "Revisa NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 17 al 23 de octubre de 2026. Señala qué días se comprobaron.",
               "tools_triggered": "review_spanish_company_events",
               "expected_behavior": "Report coverage for all seven dates, distinguishing checked dates from unavailable issues. Attribute a missing issue to a nonpublication day only when that is established. Link each returned notice. If the source fails or only some sources respond, state the available coverage."
             },
             {
               "description": "Separate publication from registration",
-              "prompt": "Busca SERVICIOS ELECTRICOS SR en el BORME de Madrid del 20 de octubre de 2026 y separa la publicaci\u00f3n de cualquier fecha de inscripci\u00f3n que conste.",
+              "prompt": "Busca SERVICIOS ELECTRICOS SR en el BORME de Madrid del 20 de octubre de 2026 y separa la publicación de cualquier fecha de inscripción que conste.",
               "tools_triggered": "review_spanish_company_events",
               "expected_behavior": "Cite the incorporation notice and give its publication date. Label any distinct dates by their actual meaning and identify any date unavailable in the returned material. If the source fails or only some sources respond, state the available coverage."
             }
@@ -70,7 +70,7 @@
           "negative": [
             {
               "description": "Published corporate notices are not a solvency assessment. Explain that the plugin can look up specific published notices but cannot score creditworthiness. Do not call review_spanish_company_events for this request.",
-              "prompt": "Calcula una puntuaci\u00f3n de solvencia de esta empresa."
+              "prompt": "Calcula una puntuación de solvencia de esta empresa."
             },
             {
               "description": "The company-notice lookup is not a personal asset search. Explain that the plugin does not build dossiers about individuals. Do not call review_spanish_company_events for this request.",
@@ -78,18 +78,18 @@
             },
             {
               "description": "The date window describes a user-initiated lookup. Explain that the plugin does not set up automatic monitoring or alerts. Do not call review_spanish_company_events for this request.",
-              "prompt": "Activa alertas autom\u00e1ticas sobre esta sociedad."
+              "prompt": "Activa alertas automáticas sobre esta sociedad."
             }
           ]
         },
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
       },
       "publication": {
-        "release_notes": "Adds review examples for company searches across exact dates and provinces.",
+        "release_notes": "Clearer task-based name, descriptions and examples for finding the right Spanish public records. Existing tools and source coverage are unchanged.",
         "translations": {
           "es-ES": {
-            "subtitle": "Actos societarios claros",
-            "description": "Localiza anuncios de una sociedad en el BORME por nombre, provincia y un periodo de hasta siete d\u00edas. Revisa las coincidencias y el alcance de cada edici\u00f3n. Los enlaces oficiales y las categor\u00edas descriptivas permiten contrastar los cambios con el anuncio publicado."
+            "subtitle": "Empresas y actos societarios",
+            "description": "Consulta cambios publicados de empresas españolas con enlaces a los anuncios originales del Registro Mercantil. Busca por nombre de sociedad, provincia y un periodo de hasta siete días en el BORME. Revisa constituciones, nombramientos, ceses, cambios de domicilio o capital, correcciones y disoluciones cuando consten. Obtén fecha de publicación, datos registrales disponibles y ediciones revisadas. La consulta cubre anuncios publicados; no proporciona informes completos de empresa, cuentas anuales, balances, puntuaciones de solvencia ni certificados registrales."
           }
         }
       }
@@ -97,16 +97,19 @@
   },
   "keywords": [
     "spain",
-    "claude-plugin",
-    "borme",
+    "companies",
+    "company filings",
+    "company changes",
     "empresas",
-    "actos-societarios",
-    "registro-mercantil",
-    "b2b"
+    "sociedades",
+    "registro mercantil",
+    "BORME",
+    "constitución",
+    "capital"
   ],
   "license": "MIT",
   "name": "borme-intelligence",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "homepage": "https://aiplugins.megawebs.com/plugins/borme-intelligence",
   "repository": "https://github.com/samihalawa/borme-intelligence"
 }
