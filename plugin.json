@@ -43,12 +43,6 @@
               "expected_behavior": "Report the matching published correction with its date, company name, notice number and official link. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Bound matches to one result",
-              "prompt": "Busca ECOAUDIT en el BORME de Madrid del 20 de octubre de 2026 y devuelve como máximo un acto. Indica si se truncaron los resultados.",
-              "tools_triggered": "review_spanish_company_events",
-              "expected_behavior": "Return at most one matching notice and state whether the returned list was truncated. Cite its publication and treat category labels as descriptive. If the source fails or only some sources respond, state the available coverage."
-            },
-            {
               "description": "Distinguish a company search with no matches",
               "prompt": "Busca LINGUASERVE en el BORME de Madrid del 20 de octubre de 2026 e indica el alcance aunque no haya coincidencias.",
               "tools_triggered": "review_spanish_company_events",
@@ -117,7 +111,7 @@
   ],
   "license": "MIT",
   "name": "borme-intelligence",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "homepage": "https://aiplugins.megawebs.com/plugins/borme-intelligence",
   "repository": "https://github.com/samihalawa/borme-intelligence"
 }

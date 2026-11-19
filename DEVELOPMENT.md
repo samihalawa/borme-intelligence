@@ -1,4 +1,4 @@
-# Desarrollo — Spain Companies 0.6.5
+# Desarrollo — Spain Companies 0.6.6
 
 El paquete configura un MCP remoto Streamable HTTP; no contiene un servidor Python local. Contrato: `review_spanish_company_events` en `https://aiplugins.megawebs.com/mcp/borme-intelligence`. El servidor compartido se mantiene en `connectors/spain-assistant-mcp-apps` del repositorio privado maestro.
 

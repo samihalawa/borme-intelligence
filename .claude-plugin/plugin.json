@@ -1,7 +1,7 @@
 {
   "name": "borme-intelligence",
   "displayName": "Spain Companies",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "Find Spanish company filings and published changes in Spain (empresas de España): incorporations, directors, capital, registered addresses and dissolutions from BORME notices.",
   "author": {
     "name": "Sami Halawa",

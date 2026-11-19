@@ -2,7 +2,7 @@
 
 Find Spanish company filings and published changes in Spain (empresas de España): incorporations, directors, capital, registered addresses and dissolutions from BORME notices.
 
-Versión 0.6.5: `review_spanish_company_events` mediante MCP remoto alojado, complementado por instrucciones para revisar fuentes y documentos. No requiere Python local ni claves del editor. La cobertura y la vigencia se verifican por consulta; las capturas incluidas son históricas. Los textos de ficha y sus traducciones canónicos están en `plugin.json`. No implica afiliación oficial ni aprobación en un directorio.
+Versión 0.6.6: `review_spanish_company_events` mediante MCP remoto alojado, complementado por instrucciones para revisar fuentes y documentos. No requiere Python local ni claves del editor. La cobertura y la vigencia se verifican por consulta; las capturas incluidas son históricas. Los textos de ficha y sus traducciones canónicos están en `plugin.json`. No implica afiliación oficial ni aprobación en un directorio.
 
 ## Descubrimiento y primera tarea
 
