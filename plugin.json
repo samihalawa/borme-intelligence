@@ -4,7 +4,7 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Find published Spanish company changes and commercial registry notices (empresas y actos societarios): incorporations, appointments, resignations, capital, address changes and dissolutions in BORME.",
+  "description": "Find Spanish company filings and published changes in Spain (empresas de España): incorporations, directors, capital, registered addresses and dissolutions from BORME notices.",
   "extensions": {
     "com.openai": {
       "interface": {
@@ -12,15 +12,15 @@
         "category": "Business & Operations",
         "composerIcon": "./assets/icon.png",
         "defaultPrompt": [
-          "Busca cambios publicados de NEMENTIUM TECHNOLOGIES en Madrid el 20 de octubre de 2026.",
-          "Find ECOAUDIT company filings in Madrid on 20 October 2026 and cite the registry notices.",
-          "Revisa constituciones y nombramientos de SERVICIOS ELECTRICOS SR en Madrid el 20 de octubre de 2026."
+          "¿Qué cambios de TELEFONICA se han publicado en Madrid durante los últimos siete días?",
+          "Find company notices for IBERDROLA in Bizkaia over the last seven days.",
+          "Busca NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 20 de octubre de 2026 y resume los anuncios."
         ],
         "developerName": "Sami Halawa",
         "displayName": "Spain Companies",
         "logo": "./assets/logo.png",
-        "longDescription": "Research published changes to Spanish companies with links to the original commercial registry notices. Search a company name, province and date range of up to seven days in BORME, Spain’s Official Commercial Registry Gazette. Review matching notices for incorporations, appointments and resignations, registered address or capital changes, corrections and dissolutions when present in the source. See the publication date, available registration details and which editions were checked. This is a lookup of published notices, not a complete company report, annual accounts or balance-sheet service, credit score or registry certificate.",
-        "shortDescription": "Company changes and filings",
+        "longDescription": "Check published company changes in Spain (España) with the original BORME notices. Search a company name, province and period of up to seven days. Review incorporations, director appointments and resignations, capital or registered-address changes, corrections and dissolutions when present. Receive a concise chronology with publication dates, available registration details, links and coverage. This lookup does not provide annual accounts, balance sheets, revenue, credit scores, registry certificates or a complete company history.",
+        "shortDescription": "Spanish companies and filings",
         "websiteURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence",
         "supportURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence/support",
         "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence/privacy",
@@ -65,6 +65,12 @@
               "prompt": "Busca SERVICIOS ELECTRICOS SR en el BORME de Madrid del 20 de octubre de 2026 y separa la publicación de cualquier fecha de inscripción que conste.",
               "tools_triggered": "review_spanish_company_events",
               "expected_behavior": "Cite the incorporation notice and give its publication date. Label any distinct dates by their actual meaning and identify any date unavailable in the returned material. If the source fails or only some sources respond, state the available coverage."
+            },
+            {
+              "description": "Recognize the user task without naming the plugin",
+              "prompt": "Estoy revisando a NEMENTIUM TECHNOLOGIES como proveedor en Madrid. Comprueba qué actos se publicaron el 20 de octubre de 2026.",
+              "tools_triggered": "review_spanish_company_events",
+              "expected_behavior": "Use the domain tool for the supplied public inputs without asking for unrelated account or profile information. Answer the requested comparison with returned official links, dates, units and actual coverage. Distinguish partial or failed source access from no matches; do not claim an unsupported feature or current status."
             }
           ],
           "negative": [
@@ -85,11 +91,11 @@
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
       },
       "publication": {
-        "release_notes": "Clearer task-based name, descriptions and examples for finding the right Spanish public records. Existing tools and source coverage are unchanged.",
+        "release_notes": "Improved Spanish and English discovery, first-use prompts and sourced result guidance across Spain utilities. No new data access, payment features or background monitoring.",
         "translations": {
           "es-ES": {
-            "subtitle": "Empresas y actos societarios",
-            "description": "Consulta cambios publicados de empresas españolas con enlaces a los anuncios originales del Registro Mercantil. Busca por nombre de sociedad, provincia y un periodo de hasta siete días en el BORME. Revisa constituciones, nombramientos, ceses, cambios de domicilio o capital, correcciones y disoluciones cuando consten. Obtén fecha de publicación, datos registrales disponibles y ediciones revisadas. La consulta cubre anuncios publicados; no proporciona informes completos de empresa, cuentas anuales, balances, puntuaciones de solvencia ni certificados registrales."
+            "subtitle": "Empresas y cambios en España",
+            "description": "Datos y consultas de España. Consulta cambios publicados de empresas españolas con enlaces a los anuncios originales del Registro Mercantil. Busca por nombre de sociedad, provincia y un periodo de hasta siete días en el BORME. Revisa constituciones, nombramientos, ceses, cambios de domicilio o capital, correcciones y disoluciones cuando consten. Obtén fecha de publicación, datos registrales disponibles y ediciones revisadas. La consulta cubre anuncios publicados; no proporciona informes completos de empresa, cuentas anuales, balances, puntuaciones de solvencia ni certificados registrales."
           }
         }
       }
@@ -97,6 +103,8 @@
   },
   "keywords": [
     "spain",
+    "España",
+    "Spanish",
     "companies",
     "company filings",
     "company changes",
@@ -109,7 +117,7 @@
   ],
   "license": "MIT",
   "name": "borme-intelligence",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "homepage": "https://aiplugins.megawebs.com/plugins/borme-intelligence",
   "repository": "https://github.com/samihalawa/borme-intelligence"
 }

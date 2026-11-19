@@ -1,8 +1,8 @@
 {
   "name": "borme-intelligence",
   "displayName": "Spain Companies",
-  "version": "0.6.4",
-  "description": "Find published Spanish company changes and commercial registry notices (empresas y actos societarios): incorporations, appointments, resignations, capital, address changes and dissolutions in BORME.",
+  "version": "0.6.5",
+  "description": "Find Spanish company filings and published changes in Spain (empresas de España): incorporations, directors, capital, registered addresses and dissolutions from BORME notices.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
@@ -10,6 +10,8 @@
   "license": "MIT",
   "keywords": [
     "spain",
+    "España",
+    "Spanish",
     "companies",
     "company filings",
     "company changes",

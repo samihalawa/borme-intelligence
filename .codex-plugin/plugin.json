@@ -3,21 +3,21 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Find published Spanish company changes and commercial registry notices (empresas y actos societarios): incorporations, appointments, resignations, capital, address changes and dissolutions in BORME.",
+  "description": "Find Spanish company filings and published changes in Spain (empresas de España): incorporations, directors, capital, registered addresses and dissolutions from BORME notices.",
   "interface": {
     "capabilities": [],
     "category": "Business & Operations",
     "composerIcon": "./assets/icon.png",
     "defaultPrompt": [
-      "Busca cambios publicados de NEMENTIUM TECHNOLOGIES en Madrid el 20 de octubre de 2026.",
-      "Find ECOAUDIT company filings in Madrid on 20 October 2026 and cite the registry notices.",
-      "Revisa constituciones y nombramientos de SERVICIOS ELECTRICOS SR en Madrid el 20 de octubre de 2026."
+      "¿Qué cambios de TELEFONICA se han publicado en Madrid durante los últimos siete días?",
+      "Find company notices for IBERDROLA in Bizkaia over the last seven days.",
+      "Busca NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 20 de octubre de 2026 y resume los anuncios."
     ],
     "developerName": "Sami Halawa",
     "displayName": "Spain Companies",
     "logo": "./assets/logo.png",
-    "longDescription": "Research published changes to Spanish companies with links to the original commercial registry notices. Search a company name, province and date range of up to seven days in BORME, Spain’s Official Commercial Registry Gazette. Review matching notices for incorporations, appointments and resignations, registered address or capital changes, corrections and dissolutions when present in the source. See the publication date, available registration details and which editions were checked. This is a lookup of published notices, not a complete company report, annual accounts or balance-sheet service, credit score or registry certificate.",
-    "shortDescription": "Company changes and filings",
+    "longDescription": "Check published company changes in Spain (España) with the original BORME notices. Search a company name, province and period of up to seven days. Review incorporations, director appointments and resignations, capital or registered-address changes, corrections and dissolutions when present. Receive a concise chronology with publication dates, available registration details, links and coverage. This lookup does not provide annual accounts, balance sheets, revenue, credit scores, registry certificates or a complete company history.",
+    "shortDescription": "Spanish companies and filings",
     "websiteURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence",
     "supportURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence/support",
     "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/borme-intelligence/privacy",
@@ -25,6 +25,8 @@
   },
   "keywords": [
     "spain",
+    "España",
+    "Spanish",
     "companies",
     "company filings",
     "company changes",
@@ -38,7 +40,7 @@
   "license": "MIT",
   "name": "borme-intelligence",
   "skills": "./skills",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "homepage": "https://aiplugins.megawebs.com/plugins/borme-intelligence",
   "extensions": {
     "com.openai": {

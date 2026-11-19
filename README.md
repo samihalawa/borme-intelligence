@@ -1,22 +1,21 @@
 # Spain Companies
 
-Find published Spanish company changes and commercial registry notices (empresas y actos societarios): incorporations, appointments, resignations, capital, address changes and dissolutions in BORME.
+Find Spanish company filings and published changes in Spain (empresas de España): incorporations, directors, capital, registered addresses and dissolutions from BORME notices.
 
-**Versión 0.6.4 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
+**Versión 0.6.5 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
 
 ## Instalación y uso
 
-```bash
-/plugin install borme-intelligence --marketplace samihalawa/2026-MASTER-Marketplace-Plugins-Connectors-etc
-```
+Instalación y conexión: [abrir la página del producto](https://aiplugins.megawebs.com/plugins/borme-intelligence). Elige allí las instrucciones del anfitrión que utilices.
 
 
 Instala el paquete en un anfitrión compatible con plugins y MCP remoto. La configuración incluida conecta `https://aiplugins.megawebs.com/mcp/borme-intelligence` mediante Streamable HTTP y expone `review_spanish_company_events`. No necesitas Python local, instalar dependencias ni proporcionar una clave del editor. La disponibilidad de la conexión depende del anfitrión y de la fuente pública.
 
-> Consulta actos de TELEFONICA en MADRID del 2026-10-26 al 2026-10-30.
+> ¿Qué cambios de TELEFONICA se han publicado en Madrid durante los últimos siete días?
 
-- Revisa TELEFONICA en MADRID el 2026-10-30 y conserva los enlaces oficiales.
-- Busca hasta cinco actos de IBERDROLA en BIZKAIA del 2026-10-26 al 2026-10-30.
+- Find company notices for IBERDROLA in Bizkaia over the last seven days.
+- Busca NEMENTIUM TECHNOLOGIES en el BORME de Madrid del 20 de octubre de 2026 y resume los anuncios.
+
 
 Lee [la habilidad](skills/borme-intelligence/SKILL.md) para el procedimiento, [las fuentes](skills/borme-intelligence/references/sources.md) y [el contrato de acceso](skills/borme-intelligence/references/runtime.md). La herramienta realiza la consulta acotada descrita; la lectura de documentos, interpretación y creación de archivos usan capacidades adicionales del anfitrión. Conserva los identificadores, enlaces, fechas y límites realmente devueltos.
 

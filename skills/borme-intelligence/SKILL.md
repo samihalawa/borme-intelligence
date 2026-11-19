@@ -1,15 +1,20 @@
 ---
 name: borme-intelligence
-description: "Use when the user wants to find published Spanish company changes and commercial registry notices (empresas y actos societarios): incorporations, appointments, resignations, capital, address changes and dissolutions in BORME."
+description: "Use when the user wants to find Spanish company filings and published changes in Spain (empresas de España): incorporations, directors, capital, registered addresses and dissolutions from BORME notices."
 ---
 
 # Spain Companies
 
-Los cambios de una empresa, con su fuente delante. Revisa actos de una sociedad en el BORME por provincia y periodo explícito, con fuentes verificables y cobertura declarada.
+Consulta los cambios publicados de una empresa de España. Find Spanish company filings and published changes in Spain (empresas de España): incorporations, directors, capital, registered addresses and dissolutions from BORME notices.
+## Primera consulta y resultado útil
+
+Reutiliza sociedad, provincia y fechas del contexto. Convierte «últimos siete días» en un intervalo inclusivo de siete fechas y exprésalo en el resultado. No conviertas MADRID o los nombres de demostración en hechos sobre la sociedad del usuario. Si falta una provincia esencial y no puede verificarse, pide solo ese dato; puedes explicar antes qué se va a consultar. Usa la herramienta MCP para su consulta soportada; si su respuesta ya resuelve la petición, no repitas esa búsqueda en el navegador. Abre documentos adicionales solo cuando la pregunta o una laguna material lo requieran. Reutiliza el contexto; pregunta solo por un dato esencial que no puedas resolver con la información o fuentes disponibles.
+
+Entrega primero la respuesta o comparación que pidió el usuario, con una tabla breve cuando ayude. Conserva enlaces oficiales, fechas, identificadores y unidades relevantes; explica los límites que cambien la interpretación junto al dato afectado. El resultado debe poder reutilizarse desde la conversación, sin publicidad, llamadas a contratar ni recomendaciones ajenas a la tarea. Propón una continuación solo cuando ayude a resolver la petición; no actives alertas, seguimiento ni funciones que no se hayan ejecutado.
 
 ## Uso
 
-Esta edición 0.6.4 incluye el conector MCP alojado `review_spanish_company_events` en `https://aiplugins.megawebs.com/mcp/borme-intelligence`. Úsalo para su consulta pública de solo lectura: Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
+Esta edición 0.6.5 incluye el conector MCP alojado `review_spanish_company_events` en `https://aiplugins.megawebs.com/mcp/borme-intelligence`. Úsalo para su consulta pública de solo lectura: Consulta actos publicados de una sociedad en el BORME por provincia y un periodo de hasta siete días, conservando fuente y límites. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
 
 Responde en el idioma del usuario. Reutiliza los datos ya facilitados. Consulta `references/workflow.md` para el procedimiento específico, `references/sources.md` para las fuentes oficiales y `references/runtime.md` para acceso y privacidad. Si faltan datos que cambien la conclusión, concreta la incertidumbre; no inventes identificadores, documentos ni consultas.
 
